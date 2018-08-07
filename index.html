@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Page Title -->
+    <title>Password Strength</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Link to the css file  -->
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <!-- Link to the javascript file  -->
+    <script src="main.js"></script>
+
+</head>
+
+<body>
+    <!-- Start of page title div -->
+    <div class="header">
+        <h1 id="page-title">Password Strength</h1>
+    </div>
+    <!-- End of page title div -->
+
+    <!-- Start of password input div -->
+    <div class="password-container">
+        <form>
+            <input type="password" id="password-string" placeholder=" Enter your password here ..." autocomplete="off">
+        </form>
+    </div>
+    <!-- End of password input div -->
+
+    <!-- Start of control buttons div -->
+    <div class="ctrlBtn">
+        <!-- Button to send password to javascript for strength validation-->
+        <input type="submit" id="myBtn1" onclick="check()" value="Check" autocomplete="off">
+        <!-- Button to reset the password strength result -->
+        <input type="reset" id="myBtn2" onclick="reset()" value="Reset" autocomplete="off">
+    </div>
+    <!-- End of control buttons div -->
+
+    <!-- Start of password strength result div -->
+    <div class="result-table">
+
+        <!--  h5 for displaying password length error // Min = 6 || Max = 12 -->
+        <h5 id="error-display"></h5>
+
+        <!--  Start of password strength result table -->
+        <table id="result" align="center">
+            <!--  Start of password strength result table head-->
+            <thead>
+                <tr>
+                    <th colspan="3">Password Strength Result</th>
+                </tr>
+            </thead>
+            <!--  End of password strength result table head -->
+
+            <!--  Start of password strength result table body || Each row has two divisions ==> criteria|percentage-->
+            <tbody>
+                <!--  Start of lowercase row  -->
+                <tr>
+                    <td style="width: 80%">Lowercase Letter</td>
+                    <td>
+                        <h1 id="lower-score"></h1>
+                    </td>
+                </tr>
+                <!--  End of lowercase row -->
+
+                <!--  Start of uppercase row -->
+                <tr>
+                    <td>Uppercase Letter</td>
+
+                    <td>
+                        <h1 id="upper-score"></h1>
+                    </td>
+                </tr>
+                <!--  End of uppercase row -->
+
+                <!--  Start of number row -->
+                <tr>
+                    <td>Number</td>
+                    <td>
+                        <h1 id="number-score"></h1>
+                    </td>
+                </tr>
+                <!--  End of number row -->
+
+                <!--  Start of special character row -->
+                <tr>
+                    <td>Special Character</td>
+                    <td>
+                        <h1 id="sc-score"></h1>
+                    </td>
+                </tr>
+                <!--  End of special character row -->
+
+                <!--  Start of total password strength result row  -->
+                <tr>
+                    <td>
+                        Password Strength
+                    </td>
+                    <td colspan="2">
+                        <h1 id="score"></h1>
+                    </td>
+                </tr>
+                <!--  End of total password strength result row  -->
+            </tbody>
+            <!--  End of password strength result table body -->
+        </table>
+        <!--  End of password strength result table -->
+    </div>
+    <!-- End of password strength result div -->
+</body>
+
+</html>

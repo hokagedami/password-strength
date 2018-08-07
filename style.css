@@ -1,0 +1,165 @@
+/* Styles for body of the html document */
+
+body {
+    background-color: #6698F8;
+    margin: 0%;
+}
+
+
+/* Styles for the element with class = header */
+
+.header {
+    background-color: #41A0E5;
+    text-align: center;
+    height: 100px;
+}
+
+
+/* Styles for the element with id = page-title */
+
+#page-title {
+    font-weight: bold;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #F7F9F9;
+    font-size: 70px;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+
+/* Styles for the div containing the password input and control buttons */
+
+.password-container {
+    margin-top: 32px;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+
+/* Styles for password input element */
+
+input[type='password'] {
+    width: 40%;
+    height: 25px;
+}
+
+
+/* Styles for the div containing the control button elements */
+
+.ctrlBtn {
+    align-content: center;
+    text-align: center;
+}
+
+
+/* Styles for control button elements */
+
+#myBtn1,
+#myBtn2 {
+    width: auto;
+    height: auto;
+    border-radius: 6px;
+    border: none;
+    font-size: 1em;
+    padding: .5rem;
+    background: #86d1f0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: bold;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+
+/* Styles for control button element with id = myBtn2 only */
+
+#myBtn2 {
+    margin-left: 2em;
+}
+
+
+/* Styles for the result table with id = result */
+
+#result {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 350px;
+    align-content: center;
+}
+
+
+/* Styles for the result table children elements <td> and <th> */
+
+#result td,
+#result th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-style: bold;
+    font-weight: bold;
+}
+
+
+/* Style for the even-nth-child of <tr> child element of the result table  */
+
+#result tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+/* Style for hovering effect on the <tr> child element of the result table */
+
+#result tr:hover {
+    background-color: #ddd;
+}
+
+
+/* Styles for the result table child element and <th> */
+
+#result th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+}
+
+
+/* Styles for the <h5> password length element with id = error-display  */
+
+#error-display {
+    color: red;
+    font-size: 1em;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+
+/* Style for <div> containing the password strength result table and error message */
+
+.result-table {
+    align-content: center;
+    text-align: center;
+}
+
+
+/* Style for the number, lowercase, uppercase and special character strengths in the result table */
+
+#number-score,
+#sc-score,
+#upper-score,
+#lower-score {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+
+/* Style for the password total strength in the result table */
+
+#score {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    color: red;
+}
