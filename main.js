@@ -76,31 +76,3 @@ reset = () => {
     document.getElementById("sc-score").innerHTML = "";
     document.getElementById("score").innerHTML = "";
 };
-
-/* getMaxPrime = (numb) => {
-    let maxPrime = 1;
-    for (let index = 2; index < numb; index++) {
-        if (numb % index == 0 && isPrime(index) && index > maxPrime) {
-            maxPrime = index;
-        }
-    }
-    return maxPrime;
-};
-
-isPrime = (num) => {
-    if (num <= 3) {
-        return true;
-    } else if (num % 2 === 0 || num % 3 === 0) {
-        return false;
-    }
-
-    let i = 5;
-    while (i * i <= num) {
-        if (num % i === 0 || num % (i + 2) === 0) {
-            return false;
-        }
-        i += 6;
-    }
-    return true;
-};
-console.log(getMaxPrime(12)); */
