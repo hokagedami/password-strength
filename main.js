@@ -7,9 +7,8 @@
 check = () => {
     reset(); /* Reset previous result */
     let userPassword = document.getElementById("password-string").value; /* Get password entered by user */
-    console.log(userPassword);
 
-    document.getElementById('password-string').value = '';
+
     /* Condition to check if password meets minimum and maximum length allowed  */
     if (userPassword.length < 6) {
         document.getElementById("error-display").innerHTML =
@@ -64,6 +63,8 @@ check = () => {
         document.getElementById("number-score").innerHTML = `${numberStrength}%`;
         document.getElementById("sc-score").innerHTML = `${specialCharStrength}%`;
         document.getElementById("score").innerHTML = `${totalStrength}%`;
+
+        clrPswrd();
     }
 };
 
@@ -76,3 +77,5 @@ reset = () => {
     document.getElementById("sc-score").innerHTML = "";
     document.getElementById("score").innerHTML = "";
 };
+
+clrPswrd = () => document.getElementById("password-string").value = '';
